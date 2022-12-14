@@ -1,4 +1,4 @@
-# learning-cpp
+# learning-c
 
 RIP Dennis Ritchie
 
