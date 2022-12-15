@@ -6,6 +6,10 @@ int main()
 {
   char *hello;
   hello = malloc(6 * sizeof(char));
+  if (hello == NULL)
+  {
+    exit(-1);
+  }
   strcpy(hello, "Hello");
   hello = realloc(hello, 7 * sizeof(char));
   char world[] = "World!\n";
