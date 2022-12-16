@@ -4,7 +4,7 @@ char *dynamicCp(char *__restrict__ __dest, const char *__restrict__ __src)
 {
   if ((__src == NULL) || (__dest == NULL))
   {
-    fprintf(stderr, "__src is a null pointer");
+    fprintf(stderr, "NULL pointer passed as argument\n");
     exit(-1);
   }
   __dest = realloc(__dest, strlen(__src) + 1);
