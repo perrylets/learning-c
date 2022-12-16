@@ -3,7 +3,7 @@
 int main()
 {
   char *hello;
-  hello = calloc(6, sizeof(char));
+  hello = malloc(6);
   if (hello == NULL)
   {
     exit(-1);
