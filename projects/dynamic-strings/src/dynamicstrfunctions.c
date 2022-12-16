@@ -2,9 +2,9 @@
 
 char *dynamicCp(char *__restrict__ __dest, const char *__restrict__ __src)
 {
-  if (__src == NULL)
+  if ((__src == NULL) || (__dest == NULL))
   {
-    printf("__src is a null pointer");
+    fprintf(stderr, "__src is a null pointer");
     exit(-1);
   }
   __dest = realloc(__dest, strlen(__src) + 1);
